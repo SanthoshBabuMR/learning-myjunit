@@ -20,7 +20,8 @@
 ## Combined Compilation cmd (from project root)
 - `javac -d "./mybuild/classes/main" src/main/java/com/babusa/learn/MyMath.java && javac -d "./mybuild/classes/test" -cp "./mylibs/*:./mybuild/classes/main/"  src/test/java/com/babusa/learn/MyMathTest.java`
 
-## Run test ( from /mybuild/classes/test )
-- `java -cp "../../../mylibs/*:../main/:."  org.junit.runner.JUnitCore com.babusa.learn.MyMathTest`
+## Run test ( from project root )
+- java -cp "./mybuild/classes/main:./mybuild/classes/test:./mylibs/*"  org.junit.runner.JUnitCore com.babusa.learn.MyMathTest
+
 
 
